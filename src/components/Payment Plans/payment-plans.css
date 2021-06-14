@@ -1,0 +1,11 @@
+.plans-header {
+    font: normal normal normal 4vh JelesW01-Regular;
+    letter-spacing: 0.24px;
+    color: #2C2E40;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    text-align: center;
+}
+

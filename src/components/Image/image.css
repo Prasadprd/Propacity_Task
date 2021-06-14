@@ -1,0 +1,68 @@
+.features{
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    position:absolute;
+    right:0%;
+    top:0%;
+    width:35%;
+    height:100%;
+    max-height:70vh
+}
+
+.image-text {
+    position: absolute;
+    top: 10%;
+    left : 15%
+}
+
+.image-text-1 {
+    font: normal normal normal JelesW01-Regular;
+    font-size: 3vh;
+    color: #F3F3F3;
+    text-transform: capitalize;
+    opacity: 1;
+    text-align: center;
+}
+
+.image-text-2 {
+    font: normal normal normal JelesW01-Regular;
+    font-size: 2vh;
+    color: #F3F3F3;
+    text-transform: capitalize;
+    opacity: 1;
+    text-align: center;
+
+}
+.image-text-3 {
+    font: normal normal normal JelesW01-Regular;
+    font-size: 1.7vh;
+    color: #F3F3F3;
+    text-transform: capitalize;
+    opacity: 1;
+    text-align: center;
+
+}
+
+.next-icon-container{
+    position: absolute;
+    top:48%;
+    left:5% ;
+    width:55%;
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+    vertical-align: middle;
+}
+
+.next-icon {
+    background: transparent padding-box;
+    opacity: 0.7;
+    max-width: 3vw;
+    
+}
+
+.chat-icon {
+    position: absolute;
+    left:5%;
+    bottom: 5%;
+    
+}

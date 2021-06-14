@@ -1,0 +1,18 @@
+.container {
+    padding: 2% 2%;
+    margin: 0%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.specs-text {
+    font: normal normal normal 5vh JelesW01-Regular;
+    letter-spacing: 0.24px;
+    color: #2C2E40;
+    text-align: center;
+    padding: 5% 2%;
+}
+
+.image {
+    max-width: 40vw;
+    max-height: 40vh;
+}

@@ -1,0 +1,21 @@
+/* .features-container{
+    position: relative;
+} */
+
+.name-container{
+    position: absolute;
+    top:10%;
+    padding: 0px 10px 0px 10px;
+    margin: 10px;
+}
+
+.name{
+    font: normal normal normal 3vh JelesW01-Regular;
+    color: #2C2E40;
+    text-transform: uppercase;
+}
+
+.feature-icon-container {
+    position: absolute;
+    top: 30%;
+}

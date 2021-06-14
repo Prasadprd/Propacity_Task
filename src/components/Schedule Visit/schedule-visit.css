@@ -1,0 +1,22 @@
+.main-container {
+    display: flex;
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    padding:1% 5%;
+    justify-content: center;
+    
+}
+
+.text {
+    text-align: center;
+    font: normal normal normal 3vh JelesW01-Regular;
+    letter-spacing: 0.15px;
+    color: #2C2E40;
+    margin-bottom: 0%;
+    padding: 1% 2%;
+    margin: 1% 2%;
+}
+
+.button {
+    margin: 1% 2%;
+    padding: 0% 3%;
+}

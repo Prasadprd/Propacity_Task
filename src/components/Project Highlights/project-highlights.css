@@ -1,0 +1,10 @@
+.heading {
+    font: normal normal normal 48px/75px JelesW01-Regular;
+    letter-spacing: 0.24px;
+    color: #2C2E40;
+}
+
+.highlights-container {
+    background: hsl(0, 9%, 89%) 0% 0% no-repeat padding-box;
+    
+}
