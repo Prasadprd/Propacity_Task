@@ -7,6 +7,10 @@ import ProjectHighlights from "../../components/Project Highlights/project-highl
 import PaymentPlans from "../../components/Payment Plans/payment-plans";
 import ScheduleVisit from "../../components/Schedule Visit/schedule-visit";
 import Specification from "../../components/Project Specification/project-specification";
+import Location from "../../components/Location/location";
+import Register from "../../components/Register/register";
+import PiramalRealty from "../../components/Piramal Realty/piramal-realty";
+
 const Homepage= ()=>{
     return(
         <div>
@@ -17,6 +21,9 @@ const Homepage= ()=>{
             <PaymentPlans />
             <ScheduleVisit />
             <Specification />
+            <Location />
+            <Register />
+            <PiramalRealty />
         </div>
     )
 }

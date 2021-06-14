@@ -5,7 +5,9 @@ import group from "../../assets/Group 125.svg";
 import navigation from "../../assets/navigation.svg";
 import urbanProperty from "../../assets/urban-property.svg"
 import FeaturesIcon from "../Features Icon/features-icon";
+import {IoIosArrowForward} from "react-icons/io"
 import "./features.css"
+import { Button } from "react-bootstrap";
 
 const Features =()=>{
 
@@ -40,7 +42,7 @@ const Features =()=>{
     ]
     return (
         <div className="features-container">
-            <div className="name-container">
+            {/* <div className="name-container">
                 <p className="name" style={{ backgroundColor:"#ffd9b3",marginBottom:"1%",maxWidth:"fit-content"}}>
                     PIRAMAL ARANYA 
                 </p>
@@ -65,6 +67,32 @@ const Features =()=>{
                         })
                     }
                 </div>
+            </div> */}
+            <div className="row">
+                <p className="name" style={{ backgroundColor:"#ffd9b3",marginBottom:"1%",maxWidth:"fit-content"}}>
+                    PIRAMAL ARANYA 
+                </p>
+                <p className="name">Ultra-Luxurious PROJECT</p>
+            </div>
+                
+            <div className="row">
+                {
+                    featuresArray_1.map(icon => {
+                        return <div className="col">
+                            <FeaturesIcon icon={icon.icon} name={icon.name} details={icon.details} style={{backgroundColor:"transperent"}} />
+                        </div>
+                    })
+                }
+                {
+                    featuresArray_2.map(icon =>{
+                        return <div className="col" style={{alignItems:"center"}}>
+                            <FeaturesIcon icon={icon.icon} name={icon.name} details={icon.details} />
+                        </div>
+                    })
+                }
+            </div>
+            <div className="row" style={{maxWidth:"fit-content"}}>
+                <Button variant="dark" >Enquire Now <IoIosArrowForward /> </Button>
             </div>
         </div>
     )

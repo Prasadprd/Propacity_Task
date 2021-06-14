@@ -1,8 +1,4 @@
-.container {
-    padding: 2% 2%;
-    margin: 0%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-}
+
 
 .specs-text {
     font: normal normal normal 5vh JelesW01-Regular;
@@ -15,4 +11,12 @@
 .image {
     max-width: 40vw;
     max-height: 40vh;
+}
+
+.bedroom-header {
+    background: #BA8C5F  padding-box;
+    border: 1px solid #BA8C5F;
+    border-radius: 10px 10px 0px 0px;
+    max-width:50vw;
+    padding: 2%;
 }

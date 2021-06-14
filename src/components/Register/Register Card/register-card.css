@@ -1,0 +1,15 @@
+.container {
+    max-width: 40vw;
+    max-height: 40vh;
+    background-color:rgb(37, 37, 37);
+    border-radius: 1vw;
+    position: absolute;
+    top :-2rem;
+    left: 35vw;
+}
+
+.input {
+    border-radius: .5vw;
+    padding: 2% 25% 2% 5%;
+    margin :2% 2%
+}

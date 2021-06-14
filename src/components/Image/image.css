@@ -1,18 +1,4 @@
-.features{
-    background: #F3F3F3 0% 0% no-repeat padding-box;
-    position:absolute;
-    right:0%;
-    top:0%;
-    width:35%;
-    height:100%;
-    max-height:70vh
-}
 
-.image-text {
-    position: absolute;
-    top: 10%;
-    left : 15%
-}
 
 .image-text-1 {
     font: normal normal normal JelesW01-Regular;
@@ -42,16 +28,6 @@
 
 }
 
-.next-icon-container{
-    position: absolute;
-    top:48%;
-    left:5% ;
-    width:55%;
-    align-items:center;
-    display:flex;
-    justify-content:space-between;
-    vertical-align: middle;
-}
 
 .next-icon {
     background: transparent padding-box;
