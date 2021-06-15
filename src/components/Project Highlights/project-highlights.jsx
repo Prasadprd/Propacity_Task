@@ -19,7 +19,7 @@ const ProjectHighlights = ()=>{
     return (
         <div className="container-fluid highlights-container" >
             <div className="row" style={{padding:"5%"}}>
-                <div className="col">
+                <div className="col-12 col-md-6">
                     <div className=" row heading">
                         <p>Project Highlights</p>
                     </div>
@@ -35,12 +35,12 @@ const ProjectHighlights = ()=>{
                         <Button variant="dark">Download Brochure</Button>
                     </div>
                 </div>
-                <div className="col">
-                    <img src={image} alt="image" style={{ paddingTop:"5%",maxWidth:"50vw",maxHeight:"50vh"}} />
+                <div className="col-12 col-md-6" style={{width:"100%"}}>
+                    <img src={image} alt="image" style={{ paddingTop:"5%", maxWidth:"inherit"}} />
                 </div>
             </div>
             <div className="row" style={{padding:"0%"}}>
-                <p style={{font:"5vh JelesW01-Regular",letterSpacing: "0.24px",color: "#2C2E40",maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>Amenities For Extraordinary Lifestyle</p>
+                <p style={{font:"4vh JelesW01-Regular",letterSpacing: "0.24px",color: "#2C2E40",maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>Amenities For Extraordinary Lifestyle </p>
             </div>
             <div className="row">
                 div

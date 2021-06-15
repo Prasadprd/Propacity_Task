@@ -17,10 +17,10 @@ const Header =()=>{
     return (
         <div className="container-fluid" style={{backgroundColor:"FFFFFF",boxShadow: "0px 5px 8px #00000040"}}>
             <div className="row">
-                <div className="col-sm-2">
+                <div className="col-12 col-md-2">
                     <img src={logo} alt="logo" style={{padding:"5px",margin:"5px", height:"100px"}} />
                 </div>
-                <div className="col-sm-6">
+                <div className=" col-12 col-md-6">
                     <div className="row" style={{verticalAlign:"middle" ,height:"100%"}}>
                     {
                         links.map(link=>{

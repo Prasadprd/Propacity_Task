@@ -9,17 +9,26 @@ import "./offer-card.css"
 const OfferCard =(props)=>{
     const {type, feature_1,feature_2} = props
     return (
-        <div style ={{boxShadow: "0px 3px 6px #00000029", padding:"2%",backgroundColor:"white",
-            borderRadius: "10px", maxWidth:"20vw",marginRight:"10%",
-            opacity: "1"}}>
-            <p style={{textAlign:"center",font: " bold 3vh Poppins",letterSpacing: "0px",color: "#2A3647",marginTop:"10%" }}>{type}</p> 
-            <p className="offer-feature"><img src={mapLocation} alt="" /><BiRupee />{feature_1}</p>
-            <p className="offer-feature"><img src={mapLocation} alt="" /><BiRupee />{feature_2}</p>
+        <div className="col-6" style ={{boxShadow: "0px 3px 6px #00000029", padding:"2%",backgroundColor:"white",
+            borderRadius: "10px",marginRight:"10%",width:"fit-content"}}>
+            <p className="col-12 col-md-12" style={{textAlign:"center",font: " bold 3vh Poppins",letterSpacing: "0px",color: "#2A3647",marginTop:"10%" }}>{type}</p> 
+            <div className="col-12 col-md-12">
+                <p className="offer-feature"><img src={mapLocation} alt=""  style={{width:"2vw"}}/><BiRupee />{feature_1}</p>
+                <p className="offer-feature"><img src={mapLocation} alt=""  style={{width:"2vw"}} /><BiRupee />{feature_2}</p>
+            </div>
+            
             <div>
                 <Button variant="dark" style ={{padding:"3% 10% 3% 10%", marginTop:"5%",marginLeft:"auto",marginRight:"auto"}} >Book Now <IoIosArrowForward /></Button>
             </div>
             
         </div>
+        // <div className="row feature-card-container" >
+        //     <div className="col-12 col-md-6" style={{maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>{type}</div>
+        //     <div className="col-12">
+        //         <p><img src={mapLocation} alt="" style={{width:"2vw"}} /><BiRupee />{feature_1}</p>
+        //         <p><img src={mapLocation} alt="" style={{width:"2vw"}} /><BiRupee />{feature_2}</p>
+        //     </div>
+        // </div>
     )
 }
 

@@ -42,47 +42,25 @@ const Features =()=>{
     ]
     return (
         <div className="features-container">
-            {/* <div className="name-container">
-                <p className="name" style={{ backgroundColor:"#ffd9b3",marginBottom:"1%",maxWidth:"fit-content"}}>
-                    PIRAMAL ARANYA 
-                </p>
-                <p className="name">Ultra-Luxurious PROJECT</p>
-            </div>
-            <div className="feature-icon-container">
-            <div className="row justify-content-center" style={{padding:"0%",margin:"0%"}}>
-                    {
-                        featuresArray_1.map(icon => {
-                            return <div className="col">
-                                <FeaturesIcon icon={icon.icon} name={icon.name} details={icon.details} />
-                            </div>
-                        })
-                    }
-                </div>
-                <div className="row "style={{alignContent:"center"}}>
-                    {
-                        featuresArray_2.map(icon =>{
-                            return <div className="col" style={{alignItems:"center"}}>
-                                <FeaturesIcon icon={icon.icon} name={icon.name} details={icon.details} />
-                            </div>
-                        })
-                    }
-                </div>
-            </div> */}
-            <div className="row">
+            <div className="row" style ={{padding:"5% 3%", margin:"2%"}}>
                 <p className="name" style={{ backgroundColor:"#ffd9b3",marginBottom:"1%",maxWidth:"fit-content"}}>
                     PIRAMAL ARANYA 
                 </p>
                 <p className="name">Ultra-Luxurious PROJECT</p>
             </div>
                 
-            <div className="row">
+            <div className="row" >
+                <div className="row" style ={{padding:"2%", margin:"2%",justifyContent:"center"}}>
                 {
                     featuresArray_1.map(icon => {
-                        return <div className="col">
+                        return <div className="col" >
                             <FeaturesIcon icon={icon.icon} name={icon.name} details={icon.details} style={{backgroundColor:"transperent"}} />
                         </div>
                     })
                 }
+                </div>
+                
+                <div className="row" style ={{padding:"2%", margin:"2%",justifyContent:"center"}}>
                 {
                     featuresArray_2.map(icon =>{
                         return <div className="col" style={{alignItems:"center"}}>
@@ -90,8 +68,10 @@ const Features =()=>{
                         </div>
                     })
                 }
+                </div>
+                
             </div>
-            <div className="row" style={{maxWidth:"fit-content"}}>
+            <div className="row" style={{maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>
                 <Button variant="dark" >Enquire Now <IoIosArrowForward /> </Button>
             </div>
         </div>

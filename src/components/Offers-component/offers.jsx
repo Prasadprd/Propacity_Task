@@ -27,28 +27,31 @@ const Offers=()=>{
                 <p style={{marginLeft :"auto",marginRight:"auto",maxWidth:"fit-content"}}>0% INTEREST ON HOME LOAN UPTIL MARCH 2022</p>
             </div>
             <div className="row" style={{marginTop:"5%"}}>
-                <div className="col">
+                <div className="col-12 col-md-6">
                     <div style={{maxWidth:"fit-content",marginRight:"auto",marginLeft:"auto"}}>
                         <div className="row" > 
-                            <p style ={{font: "normal normal normal 4vh JelesW01-Regular",letterSpacing: "0.16px",
+                            <p style ={{font: "4vh JelesW01-Regular",letterSpacing: "0.16px",
                                 color: "#2C2E40"}}>Exciting EOI Offers <br /> To Choose From</p> </div>
                         <div className="row"> 
-                            <p style={{font: "normal normal normal 3vh JelesW01-Regular",letterSpacing: "0.16px",color: "#2C2E40"}}>
+                            <p style={{font: "3vh JelesW01-Regular",letterSpacing: "0.16px",color: "#2C2E40"}}>
                                 Pre-Book with Executive EOI & get <br /> an additional 3-year EQUUS club <br /> membership at St. Regis Mumbai.
                             </p> 
                         </div>
                     </div>
                     
                 </div>
-                <div className="col">
-                    <div style={{display:"flex"}}>
-                        {
+                <div className="col-12 col-md-6">
+                    <div className="row">
+                    {
                             offers.map(offer =>{
                                 return <OfferCard type={offer.type} feature_1={offer.feature_1} feature_2={offer.feature_2} />
                             })
                         }
-                       
                     </div>
+                    
+                        
+                       
+                    
                 </div>
             </div>
         </div>

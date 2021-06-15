@@ -11,13 +11,13 @@ const Image =()=> {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-8">
+                <div className="col-12 col-md-8">
                     <img src={image} alt="image" style={{maxHeight:"80vh",maxWidth:"100vw",margin:"0%",padding:"0%"}}/>
                 </div>
-                <div className="col-4" style={{background: "#F3F3F3 0% 0% no-repeat padding-box"}}>
-                    <div className="row">
-                        <Features />    
-                    </div>
+                <div className="col-12 col-md-4" style={{background: "#F3F3F3 0% 0% no-repeat padding-box"}}>
+                    
+                    <Features />    
+                    
                 </div>
             </div>
         </div>

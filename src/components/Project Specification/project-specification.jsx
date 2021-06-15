@@ -16,10 +16,10 @@ const Specification =()=>{
         <div className="container-fluid ">
             <div className="row specs-text"><p style={{marginBottom:"0%"}}>Project Specification</p></div>
             <div className="row">
-                <div className="col" style={{padding:"1% 2%",margin:"1% 2%"}}>
+                <div className="col-12 col-md-6" style={{padding:"1% 2%",margin:"1% 2%"}}>
                     <img className="image" src={image} alt="" style={{ maxWidth:"50vw",maxHeight:"50vh"}}/>
                 </div>
-                <div className="col" style={{padding:"1% 2%",margin:"1% 2%",maxWidth:"30vw",maxHeight:"30vh"}}>
+                <div className="col-12 col-md-6" style={{padding:"1% 2%",margin:"1% 2%",maxWidth:"30vw",maxHeight:"30vh"}}>
                     <div className="row">
                         <div className="row bedroom-header" > 
                             <p style={{textAlign:"center",margin:"2% 5% 2% 5%",
