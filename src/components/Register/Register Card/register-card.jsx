@@ -5,7 +5,7 @@ import "./register-card.css"
 
 const RegisterCard =()=>{
 
-    return <div className="container">
+    return <div className="register-card-container">
         <div className="row" style={{font:"5vh poppins",color:"white",textAlign:"center"}}>
             <p style={{marginBottom:"0%",padding:"2% 10%"}}>Register your interest</p> 
         </div>

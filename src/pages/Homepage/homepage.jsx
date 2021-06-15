@@ -1,4 +1,4 @@
-import React from "react"
+import React ,{useState}from "react"
 import Header from "../../components/Header/header";
 import Image from "../../components/Image/image";
 import Offers from "../../components/Offers-component/offers";
@@ -10,8 +10,12 @@ import Specification from "../../components/Project Specification/project-specif
 import Location from "../../components/Location/location";
 import Register from "../../components/Register/register";
 import PiramalRealty from "../../components/Piramal Realty/piramal-realty";
+import Footer from "../../components/Footer/footer";
+
 
 const Homepage= ()=>{
+    const [show,setShow] =useState(false)
+
     return(
         <div>
             <Image />
@@ -23,7 +27,8 @@ const Homepage= ()=>{
             <Specification />
             <Location />
             <Register />
-            <PiramalRealty />
+            <Footer />
+            {/* <PiramalRealty /> */}
         </div>
     )
 }

@@ -1,9 +1,17 @@
-import React from "react"
+import React ,{useState}from "react"
 import logo from "../../assets/logo.svg"
 import call from "../../assets/Icon zocial-call.svg"
-import {Button} from "react-bootstrap"
+import {Button ,Modal} from "react-bootstrap"
 import "./header.css"
+import EnquireModal from "../Modal/enquire-modal"
 const Header =()=>{
+    const [show ,setShow]= useState(false)
+
+    const handleClose =()=>{
+        return setShow(false)
+    }
+
+    const handleShow=()=>setShow(true)
 
     const links =["Home","Resedenties" , "Ameneties" , "Payment plans" , "Floor plans"]
     return (
@@ -36,8 +44,13 @@ const Header =()=>{
                         <div className="col contact-info" >
                             <Button variant="dark" style={{boxShadow: "3px 3px 10px #00000029",
                                     border: "1px solid #2C2E40",font:"poppins",
-                                    borderRadius: "10px"}} >Enquire Now</Button>
+                                    borderRadius: "10px"}} onClick= {handleShow}>
+                                
+                                Enquire Now
+                            </Button>
+                            
                         </div>
+                        <EnquireModal show={show} handleClose={handleClose}/>
                     </div>
                 </div>
             </div>
