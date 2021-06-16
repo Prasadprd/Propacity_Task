@@ -3,6 +3,9 @@ import { Button } from "react-bootstrap"
 import {FaCaretRight} from "react-icons/fa"
 import icon from "../../assets/Icon map-location-arrow.svg"
 import image from "../../assets/image/image.png"
+import HighlightCarousel from "../carasoul/highlight-carousel"
+import ImageCarousel from "../carasoul/image-carasoul"
+import AmenetiesSwiper from "../Swiper/ameneties-swiper"
 import "./project-highlights.css"
 
 const ProjectHighlights = ()=>{
@@ -35,15 +38,15 @@ const ProjectHighlights = ()=>{
                         <Button variant="dark">Download Brochure</Button>
                     </div>
                 </div>
-                <div className="col-12 col-md-6" style={{width:"100%"}}>
-                    <img src={image} alt="image" style={{ paddingTop:"5%", maxWidth:"inherit"}} />
+                <div className="col-12 col-md-6">
+                    < HighlightCarousel />
                 </div>
             </div>
             <div className="row" style={{padding:"0%"}}>
                 <p style={{font:"4vh JelesW01-Regular",letterSpacing: "0.24px",color: "#2C2E40",maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>Amenities For Extraordinary Lifestyle </p>
             </div>
             <div className="row">
-                div
+                < AmenetiesSwiper />
             </div>
         </div>
     )
