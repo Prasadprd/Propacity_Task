@@ -25,7 +25,6 @@ const OfferCard = (props) => {
         style={{
           textAlign: "center",
           font: " bold 3vh Poppins",
-          letterSpacing: "0px",
           color: "#2A3647",
           marginTop: "10%",
         }}

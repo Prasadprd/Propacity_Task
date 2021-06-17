@@ -1,13 +1,13 @@
 import React from "react"
 import image from "../../assets/image/image.png"
-import arrow from "../../assets/Icon map-location-arrow.svg"
 import {MdKeyboardArrowDown} from "react-icons/md"
+import { Accordion,Card } from "react-bootstrap"
 
 import "./project-specification.css"
 
 const Specification =()=>{
     const specifications =["Bathroom","Kitchen","Flooring","Common"]
-    const bedroomDetails =[
+    const accordionDetails =[
         "Bedrooms with En-suit bathrooms",
         "Floor-to-floor heigh between 3.25-3.6 m",
         "Master bedrooms with floor-to-ceiling Corner windows"
@@ -16,11 +16,11 @@ const Specification =()=>{
         <div className="container-fluid ">
             <div className="row specs-text"><p style={{marginBottom:"0%"}}>Project Specification</p></div>
             <div className="row">
-                <div className="col-12 col-md-6" style={{padding:"1% 2%",margin:"1% 2%"}}>
-                    <img className="image" src={image} alt="" style={{ maxWidth:"50vw",maxHeight:"50vh"}}/>
+                <div className="col-12 col-md-6" style={{padding:"1% 2%"}}>
+                    <img className="image" src={image} alt="" style={{width:"fit-content",height:"fit-content"}}/>
                 </div>
-                <div className="col-12 col-md-6" style={{padding:"1% 2%",margin:"1% 2%",maxWidth:"30vw",maxHeight:"30vh"}}>
-                    <div className="row">
+                <div className="col-12 col-md-4" style={{padding:"1% 2%",margin:"2% 2%"}}>
+                    {/* <div className="row">
                         <div className="row bedroom-header" > 
                             <p style={{textAlign:"center",margin:"2% 5% 2% 5%",
                                 font: "3vh Poppins",
@@ -39,16 +39,35 @@ const Specification =()=>{
                                     
                                 )
                             })}
-                        </div>
-                    </div>
-                    <div className="row">
-                        {
-                            specifications.map(spec=>{
-                                return <div className="row" style={{background: "#F3F3F3 0% 0% no-repeat padding-box",
-                                    border: "1px solid #2C2E4080",padding:"2% 2%",textAlign:"center"}}> <p style={{marginBottom:"0%"}}>{spec} <MdKeyboardArrowDown /> </p></div>
-                            })
-                        }
-                    </div>
+                        </div> 
+                        </ div>*/}
+                        <Accordion defaultActiveKey="0">
+                            {
+                                specifications.map(spec=>{
+                                    return (
+                                        <Card>
+                                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                            {spec}<MdKeyboardArrowDown /> 
+                                            </Accordion.Toggle>
+                                            <Accordion.Collapse eventKey="0">
+                                            <Card.Body>{
+                                                accordionDetails.map(detail =>{
+                                                    return(
+                                                        <div className="row" style={{background: "#F3F3F3 0% 0% no-repeat padding-box",
+                                                            border: "1px solid #2C2E4080",padding:"2% 2%",textAlign:"center"}}> 
+                                                                <p style={{marginBottom:"0%"}}>{detail}</p>
+                                                        </div>
+                            
+                                                    )
+                                                })
+                                            }</Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    )
+                                })
+                            }
+                            
+                        </Accordion>
                 </div>
             </div>
         </div>

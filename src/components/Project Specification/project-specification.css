@@ -9,8 +9,11 @@
 }
 
 .image {
-    max-width: 40vw;
+    width: fit-content;
+    height: fit-content;
+    max-width: 70%;
     max-height: 40vh;
+    margin: 2% 20%;
 }
 
 .bedroom-header {

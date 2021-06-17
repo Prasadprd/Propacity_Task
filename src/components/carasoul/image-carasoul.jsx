@@ -1,6 +1,7 @@
 import React from "react";
 import {Carousel} from "react-bootstrap"
 import image from "../../assets/image/image.png"
+import city from "../../assets/city.jfif"
 
 const ImageCarousel =()=>{
     return (
@@ -25,7 +26,7 @@ const ImageCarousel =()=>{
                 <img
                 className="d-block w-100"
                 src={image}
-                alt="Second slide"
+                alt="Second slide" 
                 />
             </Carousel.Item>
             <Carousel.Item>

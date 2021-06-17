@@ -26,13 +26,13 @@ const Register =()=>{
     return (
         <div className="container-fluid register-container">
             <div className="row" style ={{maxWidth:"50vw",maxHeight:"50vh",padding:"2% 5%",margin:"2% 5%"}}>< RegisterCard /></div>
-            <div className="row" style={{textAlign:"center", padding:"2% 6% 3% 6%",margin:"2% 6% 2% 6%"}}>
+            <div className="row d-none d-md-inline" style={{textAlign:"center", padding:"2% 6% 3% 6%",margin:"2% 6% 2% 6%"}}>
                 <p style ={{font: "5vh JelesW01-Regular",letterspacing: "0.24px",color: "#F3F3F3"}}>Piramal Realty </p>
                 <p style={{font:"2.5vh Poppins",letterSpacing: "0.12px",color: "#F3F3F3"}}>
                     Piramal Realty, the real estate arm of Piramal Group, is counted amongst the most coveted developers of India. Driven by their values of delivering luxurious homes equipped with modern amenities, Piramal Realty is developing 17 mn. sq. ft of residential and commercial projects across Mumbai. They have not only been bestowed with various accolades for their superior architectural design and innovative solutions but have also received $434 mn private equity investment from well-known investors like Goldman Sachs.
                 </p>
             </div>
-            <div className="row" style={{padding:"2% 5%",margin:"2% 5%"}}>
+            <div className="row d-none d-md-flex" style={{padding:"2% 5%",margin:"2% 5%"}}>
                 {
                     paymentPlans.map(plan=>{
                         return (

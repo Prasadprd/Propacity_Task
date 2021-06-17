@@ -22,17 +22,18 @@ const Offers = () => {
     <div
       className="container-fluid offers-container"
       style={{
-        background: "#F3F3F3 0% 0% no-repeat padding-box",
+        background: "#F3F3F3",
         padding: "2%",
       }}
     >
-      <div className="row zero-loan-logo">
-        <img className="zero-loan-image" src={zeroLoan} alt="Zero loan offer" />
+      <div className="zero-loan-logo row ">
+        <img className="zero-loan-image d-none d-md-inline" src={zeroLoan} alt="Zero loan offer" />
+        <img className="d-inline d-md-none" src={zeroLoan} alt="Zero loan offer" style={{maxWidth:"50vh",maxHeight:"10vh",margin:"2%"}}/>
         <p
           style={{
             marginLeft: "auto",
             marginRight: "auto",
-            maxWidth: "fit-content",
+            maxWidth: "fit-content"
           }}
         >
           0% INTEREST ON HOME LOAN UPTIL MARCH 2022
@@ -59,7 +60,7 @@ const Offers = () => {
               </p>{" "}
             </div>
             <div className="row">
-              <p
+              <p className="d-none d-md-inline"
                 style={{
                   font: "3vh JelesW01-Regular",
                   letterSpacing: "0.16px",
@@ -73,16 +74,19 @@ const Offers = () => {
           </div>
         </div>
         <div className="col-12 col-md-6">
-          <div className="row">
-            {offers.map((offer) => {
-              return (
-                <OfferCard
-                  type={offer.type}
-                  feature_1={offer.feature_1}
-                  feature_2={offer.feature_2}
-                />
-              );
-            })}
+          <div className="row" >
+           
+              {offers.map((offer) => {
+                return (
+                  <OfferCard
+                    type={offer.type}
+                    feature_1={offer.feature_1}
+                    feature_2={offer.feature_2}
+                  />
+                );
+              })}
+            
+            
           </div>
         </div>
       </div>

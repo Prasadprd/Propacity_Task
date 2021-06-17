@@ -32,8 +32,9 @@ const RegisterCard =()=>{
     }
 
     return <div className="register-card-container">
-        <div className="row" style={{font:"5vh poppins",color:"white",textAlign:"center"}}>
-            <p style={{marginBottom:"0%",padding:"2% 10%"}}>Register your interest</p> 
+        <div className="row" style={{color:"white",textAlign:"center"}}>
+            <p className="d-none d-md-inline" style={{font:"5vh poppins",marginBottom:"0%",padding:"2% 10%"}}>Register your interest</p> 
+            <p className="d-inline d-md-none" style={{font:"2vh poppins",marginBottom:"0%",padding:"2% 10%"}}>Register your interest</p>
         </div>
         <div className="row" style={{padding:"2% 5%"}}>
             <div className="col-8" >

@@ -63,8 +63,8 @@ const PaymentPlans =()=>{
                 {
                     floorPlans.map(plan =>{
                         return (
-                            <div className="col-sm-4" >
-                                < PaymentCard type={plan.type} price={plan.area} image={plan.pic} />
+                            <div className="col-12 col-md-4" >
+                                < PaymentCard type={plan.type} price={plan.area} image={plan.pic} style={{margin:"5%"}} />
                                 
                             </div>
                         )

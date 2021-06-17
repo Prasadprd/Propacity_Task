@@ -15,7 +15,7 @@ const Image =()=> {
                 <div className="col-12 col-md-8">
                     <ImageCarousel />
                 </div>
-                <div className="col-12 col-md-4" style={{background: "#F3F3F3 0% 0% no-repeat padding-box"}}>
+                <div className="col-12 col-md-4" style={{background: "#F3F3F3"}}>
                     
                     <Features />    
                     
