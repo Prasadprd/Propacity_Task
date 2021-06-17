@@ -6,43 +6,53 @@ import { Accordion, Card } from "react-bootstrap";
 import "./project-specification.css";
 let eventKey = 0;
 
-const Specification =()=>{
-    const specifications =[
-        {
-            key:"1",
-            type:"Bedroom"
-        },
-        {
-            key:"2",
-            type:"Bathroom"
-        },
-        {
-            key:"3",
-            type:"Kitchen"
-        },
-        {
-            key:"4",
-            type:"Flooring"
-        },
-        {
-            key:"5",
-            type:"common"
-        }
-    ]
-    const accordionDetails =[
-        "Bedrooms with En-suit bathrooms",
-        "Floor-to-floor heigh between 3.25-3.6 m",
-        "Master bedrooms with floor-to-ceiling Corner windows"
-    ]
-    return(
-        <div className="container-fluid ">
-            <div className="row specs-text"><p style={{marginBottom:"0%"}}>Project Specification</p></div>
-            <div className="row">
-                <div className="col-12 col-md-6" style={{padding:"1% 2%"}}>
-                    <img className="image" src={image} alt="" style={{width:"fit-content",height:"fit-content"}}/>
-                </div>
-                <div className="col-12 col-md-4" style={{padding:"1% 2%",margin:"2% 2%"}}>
-                    {/* <div className="row">
+const Specification = () => {
+  const specifications = [
+    {
+      key: "1",
+      type: "Bedroom",
+    },
+    {
+      key: "2",
+      type: "Bathroom",
+    },
+    {
+      key: "3",
+      type: "Kitchen",
+    },
+    {
+      key: "4",
+      type: "Flooring",
+    },
+    {
+      key: "5",
+      type: "common",
+    },
+  ];
+  const accordionDetails = [
+    "Bedrooms with En-suit bathrooms",
+    "Floor-to-floor heigh between 3.25-3.6 m",
+    "Master bedrooms with floor-to-ceiling Corner windows",
+  ];
+  return (
+    <div className="container-fluid ">
+      <div className="row specs-text">
+        <p style={{ marginBottom: "0%" }}>Project Specification</p>
+      </div>
+      <div className="row">
+        <div className="col-12 col-md-6" style={{ padding: "1% 2%" }}>
+          <img
+            className="image"
+            src={image}
+            alt=""
+            style={{ width: "fit-content", height: "fit-content" }}
+          />
+        </div>
+        <div
+          className="col-12 col-md-4"
+          style={{ padding: "1% 2%", margin: "2% 2%" }}
+        >
+          {/* <div className="row">
                         <div className="row bedroom-header" > 
                             <p style={{textAlign:"center",margin:"2% 5% 2% 5%",
                                 font: "3vh Poppins",
@@ -70,7 +80,7 @@ const Specification =()=>{
               <Accordion defaultActiveKey="0">
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey={eventKey}>
-                    {spec}
+                    {spec.type}
                     <MdKeyboardArrowDown />
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey={eventKey}>
