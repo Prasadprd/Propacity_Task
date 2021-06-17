@@ -1,9 +1,10 @@
-import React from "react"
-import image from "../../assets/image/image.png"
-import {MdKeyboardArrowDown} from "react-icons/md"
-import { Accordion,Card } from "react-bootstrap"
+import React from "react";
+import image from "../../assets/image/image.png";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { Accordion, Card } from "react-bootstrap";
 
-import "./project-specification.css"
+import "./project-specification.css";
+let eventKey = 0;
 
 const Specification =()=>{
     const specifications =[
@@ -62,39 +63,43 @@ const Specification =()=>{
                             })}
                         </div> 
                         </ div>*/}
-                        <Accordion defaultActiveKey="0">
-                            {
-                                specifications.map(spec=>{
-                                    return (
-                                        <Card key={spec.key}>
-                                            <Accordion.Toggle as={Card.Header} eventKey="0">
-                                            {spec.type}<MdKeyboardArrowDown /> 
-                                            </Accordion.Toggle>
-                                            <Accordion.Collapse eventKey="0">
-                                            <Card.Body>{
-                                                accordionDetails.map(detail =>{
-                                                    return(
-                                                        <div className="row" 
-                                                             key={detail}
-                                                             style={{background: "#F3F3F3 0% 0% no-repeat padding-box",
-                                                                border: "1px solid #2C2E4080",padding:"2% 2%",textAlign:"center"}}> 
-                                                                <p style={{marginBottom:"0%"}}>{detail}</p>
-                                                        </div>
-                            
-                                                    )
-                                                })
-                                            }</Card.Body>
-                                            </Accordion.Collapse>
-                                        </Card>
-                                    )
-                                })
-                            }
-                            
-                        </Accordion>
-                </div>
-            </div>
+
+          {specifications.map((spec, index) => {
+            eventKey++;
+            return (
+              <Accordion defaultActiveKey="0">
+                <Card>
+                  <Accordion.Toggle as={Card.Header} eventKey={eventKey}>
+                    {spec}
+                    <MdKeyboardArrowDown />
+                  </Accordion.Toggle>
+                  <Accordion.Collapse eventKey={eventKey}>
+                    <Card.Body>
+                      {accordionDetails.map((detail) => {
+                        return (
+                          <div
+                            className="row"
+                            style={{
+                              background: "#F3F3F3 0% 0% no-repeat padding-box",
+                              border: "1px solid #2C2E4080",
+                              padding: "2% 2%",
+                              textAlign: "center",
+                            }}
+                          >
+                            <p style={{ marginBottom: "0%" }}>{detail}</p>
+                          </div>
+                        );
+                      })}
+                    </Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+              </Accordion>
+            );
+          })}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Specification;
