@@ -36,8 +36,8 @@ const Register =()=>{
                 {
                     paymentPlans.map(plan=>{
                         return (
-                            <div className="col-4">
-                                <PaymentCard type={plan.type} price={plan.price} image={plan.pic} />
+                            <div className="col-4" key={plan.type}>
+                                <PaymentCard  type={plan.type} price={plan.price} image={plan.pic} />
                             </div>
                         )
                         

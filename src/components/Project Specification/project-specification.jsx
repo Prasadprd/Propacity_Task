@@ -6,7 +6,28 @@ import { Accordion,Card } from "react-bootstrap"
 import "./project-specification.css"
 
 const Specification =()=>{
-    const specifications =["Bathroom","Kitchen","Flooring","Common"]
+    const specifications =[
+        {
+            key:"1",
+            type:"Bedroom"
+        },
+        {
+            key:"2",
+            type:"Bathroom"
+        },
+        {
+            key:"3",
+            type:"Kitchen"
+        },
+        {
+            key:"4",
+            type:"Flooring"
+        },
+        {
+            key:"5",
+            type:"common"
+        }
+    ]
     const accordionDetails =[
         "Bedrooms with En-suit bathrooms",
         "Floor-to-floor heigh between 3.25-3.6 m",
@@ -45,16 +66,18 @@ const Specification =()=>{
                             {
                                 specifications.map(spec=>{
                                     return (
-                                        <Card>
+                                        <Card key={spec.key}>
                                             <Accordion.Toggle as={Card.Header} eventKey="0">
-                                            {spec}<MdKeyboardArrowDown /> 
+                                            {spec.type}<MdKeyboardArrowDown /> 
                                             </Accordion.Toggle>
                                             <Accordion.Collapse eventKey="0">
                                             <Card.Body>{
                                                 accordionDetails.map(detail =>{
                                                     return(
-                                                        <div className="row" style={{background: "#F3F3F3 0% 0% no-repeat padding-box",
-                                                            border: "1px solid #2C2E4080",padding:"2% 2%",textAlign:"center"}}> 
+                                                        <div className="row" 
+                                                             key={detail}
+                                                             style={{background: "#F3F3F3 0% 0% no-repeat padding-box",
+                                                                border: "1px solid #2C2E4080",padding:"2% 2%",textAlign:"center"}}> 
                                                                 <p style={{marginBottom:"0%"}}>{detail}</p>
                                                         </div>
                             

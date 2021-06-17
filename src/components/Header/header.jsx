@@ -67,11 +67,13 @@ const Header = () => {
               return (
                 <div
                   className="col contact-info"
+                  key={link}
                   style={{
                     font: "Poppins",
                     color: "#1A3845",
                     fontSize: "2.5vh",
                     textAlign: "center",
+                    
                   }}
                 >
                   {" "}

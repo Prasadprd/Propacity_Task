@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import accomodation from "../../assets/accomodation.svg";
 import cardinal from "../../assets/cardinal-points.svg";
 import group from "../../assets/Group 125.svg";
@@ -8,8 +8,17 @@ import FeaturesIcon from "../Features Icon/features-icon";
 import { IoIosArrowForward } from "react-icons/io";
 import "./features.css";
 import { Button } from "react-bootstrap";
+import EnquireModal from "../Modal/enquire-modal";
 
 const Features = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    return setShow(false);
+  };
+
+  const handleShow = () => setShow(true);
+
   const featuresArray = [
     {
       icon: accomodation,
@@ -61,7 +70,7 @@ const Features = () => {
         >
           {featuresArray.map((icon) => {
             return (
-              <div className="col-6 col-lg-4">
+              <div className="col-6 col-lg-4" key={icon.name}>
                 <FeaturesIcon
                   icon={icon.icon}
                   name={icon.name}
@@ -81,9 +90,11 @@ const Features = () => {
           marginRight: "auto",
         }}
       >
-        <Button variant="dark" className="">
+        <Button variant="dark" className="" onClick={handleShow} >
           Enquire Now <IoIosArrowForward />{" "}
         </Button>
+        < EnquireModal show={show} handleClose={handleClose}/>
+        
       </div>
     </div>
   );

@@ -79,6 +79,7 @@ const Offers = () => {
               {offers.map((offer) => {
                 return (
                   <OfferCard
+                    key={offer.type}
                     type={offer.type}
                     feature_1={offer.feature_1}
                     feature_2={offer.feature_2}

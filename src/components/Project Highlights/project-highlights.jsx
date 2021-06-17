@@ -28,8 +28,8 @@ const ProjectHighlights = ()=>{
                     </div>
                     <div className="row">
                         {highlights.map(highlight => {
-                            return <p style={{font: "normal normal normal 2vh Poppins",
-                                letterSpacing: "0px",
+                            return <p key={highlight}
+                                style={{font: "2vh Poppins",
                                 color: "#2C2E40",
                                 textTransform: "capitalize"}}><FaCaretRight color="#BA8C5F"/> {highlight}</p>
                         })}
@@ -43,7 +43,9 @@ const ProjectHighlights = ()=>{
                 </div>
             </div>
             <div className="row" style={{padding:"0%"}}>
-                <p style={{font:"4vh JelesW01-Regular",letterSpacing: "0.24px",color: "#2C2E40",maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>Amenities For Extraordinary Lifestyle </p>
+                <p style={{font:"4vh JelesW01-Regular",letterSpacing: "0.24px",color: "#2C2E40",maxWidth:"fit-content",marginLeft:"auto",marginRight:"auto"}}>
+                    Amenities <p className="d-none d-md-inline">For Extraordinary Lifestyle </p> 
+                </p>
             </div>
             <div className="row">
                 < AmenetiesSwiper />

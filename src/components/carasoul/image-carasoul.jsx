@@ -13,13 +13,13 @@ const ImageCarousel =()=>{
                 src={image}
                 alt="First slide"
                 />
-                <Carousel.Caption style={{color:"black"}}>
+                <Carousel.Caption className="d-none d-md-inline" style={{color:"black"}}>
                 <h3>VIEWS SO SPECTACULAR. AN OFFER SO UNIQUE</h3>
                 <p>2 BHK: 3.69 Cr onwards* | 3 BHK: 4.59 Cr onwards*</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <Carousel.Caption style={{color:"black"}}>
+                <Carousel.Caption className="d-none d-md-inline" style={{color:"black"}}>
                     <h3>VIEWS SO SPECTACULAR. AN OFFER SO UNIQUE</h3>
                     <p>2 BHK: 3.69 Cr onwards* | 3 BHK: 4.59 Cr onwards*</p>
                 </Carousel.Caption>
@@ -36,7 +36,7 @@ const ImageCarousel =()=>{
                 alt="Third slide"
                 />
 
-                <Carousel.Caption style={{color:"black"}}>
+                <Carousel.Caption className="d-none d-md-inline" style={{color:"black"}}>
                 <h3>VIEWS SO SPECTACULAR. AN OFFER SO UNIQUE</h3>
                 <p>2 BHK: 3.69 Cr onwards* | 3 BHK: 4.59 Cr onwards*</p>
                 </Carousel.Caption>

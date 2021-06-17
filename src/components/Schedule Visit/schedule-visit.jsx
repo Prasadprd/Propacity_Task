@@ -8,7 +8,7 @@ const ScheduleVisit = ()=>{
     return (
         <div className="container-fluid main-container" >
             <p className ="text">Schedule A Free Site Visit or Online Walkthrough</p>
-            <Button className="button" variant="dark">Schedule Now <IoIosArrowForward /> </Button>
+            <Button className="button d-none d-md-inline" variant="dark">Schedule Now <IoIosArrowForward /> </Button>
         </div>
     )
 }

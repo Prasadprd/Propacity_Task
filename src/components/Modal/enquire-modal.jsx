@@ -11,10 +11,10 @@ const EnquireModal =(props)=>{
             
             
             <div className="row modal-container" >
-                <div className="col-4" style={{padding:"0%",margin:"0%"}}> 
+                <div className="col-4 d-none d-md-inline" style={{padding:"0%",margin:"0%"}}> 
                     <img src={city} alt="city" style={{width:"100%",height:"100%",borderRadius:".5vw"}}/>
                 </div>
-                <div className="col-8 field-container">
+                <div className="col-12 col-md-8 field-container">
                     <div className="row" style={{font:"4vh Poppins",color:"#F3F3F3",padding:"2% 5%",margin:"2% 5%",textAlign:"center"}}> 
                         <p style={{marginBottom:"0%"}}>Enquire Now</p>
                     </div>

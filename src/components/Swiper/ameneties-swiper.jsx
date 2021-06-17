@@ -59,7 +59,7 @@ const AmenetiesSwiper = () => {
         <div className="row" style={{padding:"2% 10%",margin:"2% 10%"}}>
             <div className="col-lg-8">
                 <Swiper
-                    slidesPerView={4}
+                    slidesPerView={3}
                     navigation
                     pagination={{ clickable: true,}}
                     

@@ -5,6 +5,7 @@ import nextLeft from "../../assets/next-left.svg"
 import chatIcon from "../../assets/chat/chat.png"
 import Features from "../Features/features";
 
+
 import "./image.css"
 import ImageCarousel from "../carasoul/image-carasoul";
 
